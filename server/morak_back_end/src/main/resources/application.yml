@@ -64,7 +64,10 @@ spring:
             protocols: TLSv1.2
 logging:
   level:
-    root: error
+    org.springframework.web.client: debug
+    org.hibernate.sql: debug
+    org.hibernate.type: trace
+    org.springframework.security: debug
 
 server:
   servlet:
